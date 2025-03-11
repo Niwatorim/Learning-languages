@@ -1,0 +1,54 @@
+/*
+So in flexbox have main container and child components, called flex container and flex items respectively
+
+Here are the flex-properties:
+-display: flex |inline flex
+    flex- a div basically (its own container)
+    inline flex- puts the flex container inline of other elements
+
+
+-flex-direction: row | column 
+    Items placed horizontally or verticle
+
+-flex-wrap:  wrap |no wrap | wrapreverse
+    Items wrap onto a new line if they cant fit in one row or column
+    no wrap means they stay on one line no matter what
+    wrap-reverse is just wrap to new line but in reverse order
+
+
+-justify-content: flex-start | flex-end | center
+    aligns content along the main axis
+    start of the main axis (x-axis)
+    at the end
+    or in the middle
+
+
+-align-self: flex-start | flex-end | center
+    overrides align items, meaning u can place it differently in cross axis
+
+-align-items: flex-start | flex-end | center
+    aligns content along the cross axis (y-axis)
+    start, end or in the middle
+    
+
+align-content: flex-start | flex-end | center
+    alligns multple rows along cross axis when extra space
+
+
+-flex basis
+    Initial size of individual items 
+
+-flex-grow:<number>;
+    How much content grows when extra space
+
+-flex-shrink:<number>;
+    how much flex item shrinks when not enough shrink
+
+flex:<integer>; (just short cut for grow, shrink, and basis)
+
+order:<integer>; controls order of flex item in the container
+
+*/
+
+
+

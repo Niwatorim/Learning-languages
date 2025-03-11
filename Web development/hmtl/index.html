@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <!--Headings-->
+        <h1>Heading one</h1>
+        <h2>Heading two</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading four</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>        
+        <!--Paragraph-->
+        <p>
+            Lorem ipsum dolor, <strong>sit amet consectetur adipisicing elit.</strong>Nobis culpa excepturi voluptatum quidem <em>cumque commodi eligendi sint cum repudiandae,</em> placeat quod labore molestiae minima libero itaque quasi quam impedit accusantium?
+        <!--
+        Strong is a tag that means make bold, but using css u can customize it to do certain things like text size etc.    
+        Em is emphasize
+        -->
+        </p>
+        <!--each thing has a margin between tags of 1 M, (EM) which is standard measurement-->
+        <p>
+            Lorem ipsum dolor <a href="http://google.com" targe="_blank">sit amet consectetur</a> adipisicing elit. Porro, sed?
+        </p>
+        <!-- <a> tag is just for adding links. href is the link u wanna go to, if its local just write extension like where it is, or write the link of the external link u wanna send ppl to
+            target is which tab u wanna open that link in. using _blank means its a new external tab for it
+        -->
+        
+        <!-- Lists (2 types: unordered and ordered) -->
+        <ul> <!--ul stands for unordered list-->
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+        </ul>
+         <!--Can change how list works like the bullet points and stuff using css-->
+
+        <ol><!-- ol for ordered list-->
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+
+
+        <!-- Table -->
+        <table>
+            <thead> <!-- t(able)head -->
+                <tr> <!-- tr = table row -> when ur entering data in -->
+                    <th>Name</th> <!-- table head name -->
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody> <!-- t(able)body -->
+                <tr><!-- everytime u have this its a new row -->
+                    <td>Oofers patterson</td><!-- Table data -->
+                    <td>niwatorim001@gmail.com</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>another name</td>
+                    <td> niwa@gmail.com</td>
+                    <td>456</td>
+                </tr>
+                <tr>
+                    <td>potato potato</td>
+                    <td>doublep@gmail.com</td>
+                    <td>45</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br />
+        <hr/> <!-- Just puts a horizontal line -->
+        <br> <!-- btw no need for the /> -->
+        <!-- Form -->
+        <!-- So forms are kinda useless in html only, they can only send data to another programming language to do work-->
+        <!-- 2 types: GET, POST
+        GET= search bar
+        POST = filling out a form 
+        -->
+        <form action="process.js" method="POST">        
+            <label>First Name</label> <!-- its the label for what the form will ask for-->
+            <input type="text" name="first-name" placeholder="Enter first name"> <!-- type is the datatype, name is the parameter/argument that ur passing into function when called-->
+            <!-- Placeholder is ghosted text instructions on inputs-->
+
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Enter last name">
+
+            <div> <!-- if I dont use div then the form will be side to side like above, adding div takes the whole width -->
+                <label>email</label>
+                <input type="email" name="Email" placeholder="enter email">
+            </div>
+            <br>
+            <div>
+                <label>Long message</label>
+                <textarea name="message"></textarea>
+                <!--textarea is for big texts. has expandable so can write lots-->
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <select name="gender"><!-- for drop down -->
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div>
+                <label>Age</label>
+                <input type="number" name="age" value="30"><!-- value is predefined value-->
+            </div>
+            <div>
+                <label>date</label>
+                <input type="date" name="date">
+            </div>
+        <!-- FOR FORMS u need submit button-->
+        <br>
+        <input type="submit" name = "submit" value="Click da button"> <!-- Value is just the text on the button itself-->
+        </form>
+
+        <br>
+        <!-- Button -->
+        <!-- no need to do the onclick if u want, but gives it function-->
+        <button onClick="window.location.href='https://google.com'">Click me</button>
+        <br>
+        <!-- Image --> <!--btw img is inline-->
+
+        <a href="sample.jpg">
+            <img src="sample.jpg" width="300" height="300" alt="kitto photo">
+            <!--alt just means the alternative text to show if image cant be shown-->
+        </a><!-- What putting <a> does is when u click on phot it enlarges it-->
+            
+        <!-- Quoutations -->
+        <div>
+            <blockquoute cite="http://traversymedia.com"> <!-- This is where the quotation is from-->
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non explicabo ducimus sit sed! Rem laborum, odio quasi architecto ea excepturi! Optio quae natus tenetur repellat, possimus sint quod cum sapiente!
+            </blockquoute>
+        </div>
+        <p>the <abbr title="World Wide Web">WWW</abbr> is oof</p> <!-- the ABBR shows what content stands for, think wikepedia-->
+
+        <p><cite>HTML course</cite> done by meee</p><!-- Cite just gives it italic style-->
+
+        <a href="blog.html">Go to blog</a>
+
+        <div style="margin-top:500px"></div>
+
+
+    </body>
+</html>
+<!--
+2 types of elements:
+Block level:- start on a new line, take all the width available
+e.g.
+div, headers, paragraph, form
+
+Inline level:- Doesnt start on a new line, only takes required width
+e.g. span, image, etc.
+
+Tag attributes----------
+Tags themselves have attributes, like for <a> tag using target and href,
+    only used at start tag
+
+
+Semantic tags-----
+header- top of page
+nav- for navbar
+section- for like, main content
+article- for like, blog stuff
+aside- for side of web page
+footer- for bottom of the page
+
+so like, page is like this:
+
+
+-------header-------
+---------nav--------
+--section-- |   s   |
+--section-- |   i   |
+--article-- |   d   |
+--article-- |   e   |
+-------footer--------
+
+
+
+-->

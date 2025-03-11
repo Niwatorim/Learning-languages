@@ -1,0 +1,23 @@
+h1{
+    text-align:center;
+    font-size: 10em;
+    color:#333;
+}
+
+.container{
+    text-align:center;
+}
+
+.button{
+    padding: 10px 20px;
+    font-size:1.5em;
+    color:white;
+    background-color: hsl(209, 76%, 68%);
+    border-radius: 5px;
+    cursor:pointer;
+    transition:background-color 0.25s;
+}
+
+.button:hover{
+    background-color: hsl(251, 66%, 50%);
+}

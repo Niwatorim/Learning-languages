@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            background-color: grey;
+        }
+
+        #header{
+            font-size: 4rem;
+            font-family:"Arial", sans-serif;
+            color: black;
+        }
+
+        #container{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            border: 5px solid;
+            border-radius: 50px;
+            background-color: white;
+        }
+
+        #display{
+            font-size: 5rem;
+            font-family:monospace;
+            font-weight: bold;
+            color:black;
+            text-shadow:2px 2px 2px;
+            margin: 25px;
+        }
+
+        #controls button{
+            font-size: 1.5rem;
+            font-weight:bold;
+            padding: 10px 20px;
+            margin: 5px;
+            min-width: 125px;
+            border:none;
+            border-radius: 10px;
+            cursor: pointer;
+            color:white
+        }
+
+        #controls{
+            margin-bottom: 10px;
+        }
+        #start{
+            background-color: hsl(125, 100%, 40%)
+        }
+
+        #start:hover{
+            background-color: hsl(125, 100%, 30%)
+        }
+
+        #stop{
+            background-color: hsl(10,90%,40%);
+        }
+
+        #stop:hover{
+            background-color: hsl(10,90%,30%);
+        }
+
+        #reset{
+            background-color: hsl(205,90%,40%);
+        }
+
+        #reset:hover{
+            background-color: hsl(205,90%,30%);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="header">Stopwatch</h1>
+    <div id="container">
+        <div id="display">
+            00:00:00:00
+        </div>
+        <div id="control">
+            <button id="start" onclick="start()">Start</button>
+            <button id="stop" onclick="stop()">Stop</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src='stopwatch.js'></script>
+</body>
+</html>

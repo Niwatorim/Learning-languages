@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #player1, #player2 {
+            display: inline-block;
+            text-align: center;
+        }
+        
+        #player1 img{
+            float:left;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Roll the dice</h1>
+    <button id="roll">Roll</button>
+    <p id="result"></p>
+    <div id="player1">
+        <img src="image1.png" alt="dice1" id="dice1" width="50px" height="50px">
+    </div>
+    <div id="player2"> 
+        <img src="image2.png" alt="dice1" id="dice2" width="50px" height="50px">    
+    </div>
+
+    <script src="dice.js"></script>
+</body>
+</html>

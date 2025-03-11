@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        h1{
+            color:lightcoral;
+        }
+
+        #container{
+            background-color:white;
+            text-align: center;
+            max-width:350px;
+            margin: auto;
+            padding:25px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #number{
+            width:50%;
+            text-align: center;
+            font-size: 2em;
+            border: 2px solid black;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        label{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #btn{
+            margin-top:15px;
+            background-color: tomato;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+
+        #btn:hover{
+            background-color: red;
+        }
+
+        #result{
+            font-size: 1.75em;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Temperature conversion</h1> <br>
+        <input type="number" id="number" placeholder="Enter temperature"> <br> <br>
+        <input type="radio" id="c-f" name="change"> 
+        <label for="c-f">Celcius-Farenheit</label> <br> <br>
+        <input type="radio" id="f-c" name="change"> 
+        <label for="f-c">Farenheit-Celcius</label> <br> <br>
+        <button id="btn">Submit</button><br> <br>
+        <p id="result">Result is</p>
+    </div>
+
+    <script src="temp.js"></script>
+</body>
+</html>

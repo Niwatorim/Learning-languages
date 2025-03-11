@@ -1,0 +1,234 @@
+/* This hits everything, called a reset
+*{
+    margin:0;
+    padding:0;
+
+}
+*/
+body{
+    /*Now everything in the body will have these properties */
+    background-color:white;
+    color:#555555;
+    font-family:Arial, Arial, Helvetica, sans-serif;
+    font-size:16px;
+    /*font-weight:bold:*/
+    font-weight:normal; /*can also just use numbers of weighting of boldness*/
+    /* Just like attributes, can lowkey just write:
+    font: bold 16px Arial, Helvetica, sans-serif; and it does all of the above lol
+    */
+    margin:0; /*remove spaces at the end*/
+    /* for spacing between lines */
+    line-height:1.6em;
+}
+/* 
+for color can use:
+color's name
+hex decimal value
+rgb(x,y,z) where x y z are numbers to make color using rgb scale*/
+/*For class, need to use a dot*/
+.container{ /* setting the box size innit to wrap around the box, to make parts of website */ 
+    /* width:960px; <-- this will make the size one size */
+    width:90%; /*using percent keeps it to one percentage for resizing */
+    margin:auto; /* this recenters the margins around contain anywhere, makes margin around everywhere same side.*/
+}
+
+a{
+    text-decoration:none; /*Gets rid of the underlines and stuff */
+    color:antiquewhite;
+}
+/*Links have different states btw:
+hover: when u hover mouse over link
+active: when u click it, immediate button change
+visited: when you have visited the page before*/
+
+a:hover{
+    color:red;
+}
+a:active{
+    color:blue;
+}
+
+.clr{ /* this is to make sure text goes below floating elements*/
+    clear:both;
+}
+
+.button{
+    background-color:#333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+
+} 
+
+.button:hover{
+    background:red;
+    color:#000;
+}
+
+.box-1{
+    background-color:#333333;
+    color:#fff;
+
+    border: 5px red solid;
+    /*can target single things asw*/
+    border-bottom-width:10px;
+
+
+    padding-top: 20px;
+
+    margin-top: 50px;
+    border-radius:15px;
+}   
+
+.box-1 h1{ /* this hits any h1 inside this class */
+    font-family:Tohoma;
+    font-style: italic;
+}
+
+/*Box model:
+Content-> padding -> border <- margin (each has left right top bottom
+Padding is around content
+margin is from walls to content
+
+can set margin via: margin: [top] [right] [bottom] [left] or just [top-bottom] [left right]
+*/
+
+.categories{
+    border:1px #ccc solid;
+    margin-top:10px;
+    padding:10px;
+    border-radius:15px;
+
+}
+
+.categories h2{
+    text-align:center;
+}
+
+.categories ul{
+    padding:0;
+    list-style:none;    
+}
+
+.categories li{
+    padding-bottom:8px;
+    border-bottom:1px #333;
+    /*To add an image to the bullet points
+    list-style-image:url('../images/check.png')
+    */
+}
+
+.myform{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding-bottom:15px;
+}
+
+.my-form label{
+    display:block; /*it makes it an entire block level*/
+}
+
+.my-form input{ /* u can also define the types of inputs to classify
+    .my-form input[type="text"], .my-form textarea, to specify what types
+    */
+    padding:8px;
+    width:100%;
+}
+
+.block h3{
+    font-style:normal;
+}
+
+.block{
+    font-size:small;
+    font-style:italic;
+    float:left; /*floating is wack cuz its like images in word, cuz it makes everything after it inline */
+    width:33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing:border-box; /*this just makes things fit together basically */
+
+}
+
+
+#main-block{
+    margin-top: 50px;
+    float:left;
+    width:70%;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+#sidebar{
+    margin-top: 50px;
+    float:right;
+    width:30%;
+    background-color:#333;
+    color:#fff;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+
+/*Types of positioning in CSS:
+- Static: The default positioning; elements are placed according to the normal document flow.  
+- Relative: Positioned relative to its normal position, using `top`, `right`, `bottom`, and `left`.  
+- Absolute: Positioned relative to its nearest positioned ancestor (non-static), or the viewport if none exists.  
+- Fixed: Positioned relative to the viewport and stays in the same place even when scrolling.  
+- Initial: Resets the positioning to its default value (`static`).  
+- Inherit: Will follow the parent item
+*/
+
+.p-box{
+    object-position:center center;
+    width:90%;
+    height:500px;
+    border:1px solid #000;
+    margin-top:30px;
+    position:relative; /*objects here are relative to this container*/
+    background-image:url('../images/bgimage.webp');
+    /*
+    background-position:100px 200px;
+    background-repeat: no-repeat; all used for positioning and pushing it*/
+    background-position:center top;
+
+}
+
+.p-box h1{
+    position:absolute; /*this has a set position inside the container */
+    top:100px;
+    left:200px;
+    color: red
+}
+
+.p-box h2{
+    position:absolute;
+    bottom:40px;
+    right:200px;
+    color: red;
+}
+
+.fix-me{ /*fixed positioning */
+    position:fixed;
+    top:400px;
+    left:10px;
+}
+
+.my-list li:first-child{ /*target first item. Can also do last child*/
+    background:red;
+
+}
+
+.my-list li:nth-child(5){
+    background:blue;
+}
+
+.my-list li:nth-child(even){
+    background:grey;
+}
+
+.my-list li:last-child{
+    background:yellow;
+}

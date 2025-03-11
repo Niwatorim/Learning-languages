@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Blog</title>
+
+        <meta name="description" content="blog content practice">
+        <meta name="keywords" content="web design blog, web dev practice, potato studios">
+        <!-- meta data shows data about the site about what it is for web developers-->
+
+        <!-- Adding a lil bit of CSS, so here we can have our styling for internal-->
+        <!-- so for each css element, just reference the ID of the tag as defined, then give it context-->
+        <style type="text/css"> 
+            #Main-header{
+                text-align:center;
+                background-color:black;
+                color:white;
+                padding:10px;
+            }
+
+            #main-footer{
+                text-align:center;
+                size:18px;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <header id="Main-header"><!-- this confirms the id of the tag if have multiple for referencing-->
+            <h1> My website</h1>
+        </header>
+
+        <a href="index.html">Go to index page</a>
+
+        <section><!-- Main part of the page-->
+            <article class="post"> <!-- post can be defined using css, but like rn it just makes it blog post-->
+                <h3> Blog post 1</h3>
+                <small> Posted by meeeee</small><!-- for subtext -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quos? Dolorem voluptatum ab sequi eius facilis. Velit adipisci omnis fuga fugiat, minus sunt at molestiae, eos, provident natus placeat dolorem?</p>
+                <a href="post.hmtl">Read more</a>
+            </article>
+
+            <article class="post"> <!-- post can be defined using css, but like rn it just makes it blog post-->
+                <h3> Blog post 3</h3>
+                <small> Posted by meeeee</small><!-- for subtext -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quos? Dolorem voluptatum ab sequi eius facilis. Velit adipisci omnis fuga fugiat, minus sunt at molestiae, eos, provident natus placeat dolorem?</p>
+                <a href="post.hmtl">Read more</a>
+            </article>
+
+            <article class="post"> <!-- post can be defined using css, but like rn it just makes it blog post-->
+                <h3> Blog post 3</h3>
+                <small> Posted by meeeee</small><!-- for subtext -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quos? Dolorem voluptatum ab sequi eius facilis. Velit adipisci omnis fuga fugiat, minus sunt at molestiae, eos, provident natus placeat dolorem?</p>
+                <a href="post.hmtl">Read more</a>
+            </article>
+
+        </section>
+
+        <aside>
+            <h3>Categories</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <footer id="main-footer">
+            <p>Copyright &copy; 2024, Website</p>
+        </footer>
+
+    </body>
+
+</html>
